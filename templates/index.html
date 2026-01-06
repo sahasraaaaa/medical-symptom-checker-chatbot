@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Symptom Checker Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>⚕️ Medical Symptom Checker</h1>
+                <p class="subtitle">AI-Powered Health Assistant</p>
+                <div class="stats">
+                    <span class="stat">89% Accuracy</span>
+                    <span class="stat">41 Diseases</span>
+                    <span class="stat">130+ Symptoms</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Disclaimer Modal -->
+        <div id="disclaimerModal" class="modal">
+            <div class="modal-content">
+                <h2>⚠️ Medical Disclaimer</h2>
+                <div id="disclaimerText" class="disclaimer-text"></div>
+                <button id="acceptDisclaimer" class="btn btn-primary">I Understand and Accept</button>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="chat-container">
+            <!-- Sidebar with detected symptoms -->
+            <div class="sidebar">
+                <h3>Detected Symptoms</h3>
+                <div id="symptomsList" class="symptoms-list">
+                    <p class="no-symptoms">No symptoms detected yet</p>
+                </div>
+                <button id="resetBtn" class="btn btn-secondary">Reset Conversation</button>
+            </div>
+
+            <!-- Chat messages -->
+            <div class="chat-area">
+                <div id="chatMessages" class="chat-messages">
+                    <!-- Messages will be inserted here -->
+                </div>
+
+                <!-- Input area -->
+                <div class="chat-input-container">
+                    <input type="text" id="messageInput" class="chat-input" placeholder="Describe your symptoms..." />
+                    <button id="sendBtn" class="btn btn-send">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>⚠️ This is not a substitute for professional medical advice. Always consult a healthcare provider.</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
