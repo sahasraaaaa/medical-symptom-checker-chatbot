@@ -150,7 +150,7 @@ Bot: [Provides diagnosis with top 3 possible conditions]
 **Example 2:**
 ```
 User: I'm experiencing chest pain and difficulty breathing
-Bot: ⚠️ EMERGENCY ALERT - Please seek immediate medical attention!
+Bot:  EMERGENCY ALERT - Please seek immediate medical attention!
 ```
 
 ### API Endpoints
@@ -267,7 +267,7 @@ The chatbot can diagnose the following 41 diseases:
 
 ## Important Disclaimers
 
-⚠️ **MEDICAL DISCLAIMER**
+**MEDICAL DISCLAIMER**
 
 This chatbot is an AI-powered tool designed for **informational and educational purposes only**. It is **NOT a substitute** for professional medical advice, diagnosis, or treatment.
 
